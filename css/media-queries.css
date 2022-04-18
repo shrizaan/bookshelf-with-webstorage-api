@@ -1,0 +1,63 @@
+/* Media Query */
+
+@media screen and (max-width: 767px) {
+  .bookshelf-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .form-bookshelf {
+    max-width: 800px;
+    margin: 26px auto;
+    width: 90%;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  #bookSubmit, #searchSubmit {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .bookshelf:nth-child(2) {
+    margin: 32px 0 16px 0 !important;
+  }
+
+  .bookshelf-heading {
+    flex-direction: column;
+  }
+
+  .form-bookshelf {
+    order: 1;
+    margin-bottom: 40px;
+  }
+
+  .search-bookshelf {
+    order: 2;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .search-bookshelf input {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .total-book {
+    width: 70%;
+    margin: 26px auto;
+  }
+}

@@ -1,0 +1,109 @@
+:root {
+  --mainColor: #845ec2;
+  --fontColor: #fefedf;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/img/repeated-square.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body,
+input,
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+button {
+  font-size: 18px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: var(--mainColor);
+  color: white;
+}
+
+/* form-bookshelf */
+
+.bookshelf-heading {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.form-bookshelf, .search-bookshelf  {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #e9e9de, #ffffef);
+  box-shadow: 6px 6px 12px #e0e0c4, -6px -6px 12px #fffffa;
+}
+
+.form-bookshelf h2 {
+  text-align: center;
+  color: var(--mainColor);
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 11px;
+  border-bottom: 2px solid var(--mainColor);
+}
+
+.form-wrapper {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-wrapper input {
+  display: block;
+  width: 75%;
+  padding: 4px;
+  border-radius: 12px;
+  border: solid var(--mainColor);
+  outline-color: #24819c;
+  color: #250b65;
+}
+
+.form-wrapper label {
+  color: var(--mainColor);
+  font-weight: bold;
+  align-self: center;
+}
+
+.form-wrapper-checkbox {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-wrapper-checkbox label {
+  color: var(--mainColor);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+  color: var(--fontColor);
+  background-color: var(--mainColor);
+}

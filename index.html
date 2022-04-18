@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="css/bookshelf.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css">
+  </head>
+  <body>
+    <header class="title">
+      <h1>Bookshelf</h1>
+    </header>
+
+      <section class="bookshelf-heading">
+
+        <div class="form-bookshelf">
+          <h2>Tambahkan Buku</h2>
+          <form id="form-bookshelf">
+            <div class="form-wrapper">
+              <label for="title">Judul Buku</label>
+              <input id="title" type="text" required />
+            </div>
+            <div class="form-wrapper">
+              <label for="author">Pengarang</label>
+              <input id="author" type="text" required />
+            </div>
+            <div class="form-wrapper">
+              <label for="year">Tahun Terbit</label>
+              <input id="year" type="number" required />
+            </div>
+            <button id="bookSubmit" type="submit">Masukkan Buku</button>
+          </form>
+        </div>
+
+        <div class="search-bookshelf">
+          <h2>Pencarian</h2>
+          <form id="search-book-form">
+            <label for="search">Ketik judul buku:</label>
+            <input id="search" type="search" required/>
+            <div class="btn-wrapper" id="btn-wrapper">
+              <button id="searchSubmit" type="submit">Cari</button>
+              <button id="removeSearch" type="reset">Hapus</button>
+            </div>
+
+
+            <div id="search-result">
+
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+    <section class="bookshelf-wrapper">
+      <div class="total-book">
+        <h3>Jumlah Buku</h3>
+        <p id="total-book-count">0</p>
+      </div>
+
+      <div class="bookshelf">
+        <h2>Sedang dibaca</h2>
+
+        <div id="unfinished">
+
+
+        </div>
+      </div>
+
+      <div class="bookshelf">
+        <h2>Selesai Dibaca</h2>
+
+        <div id="finished">
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <p>Dibuat oleh <b>Shahrizan</b></p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
